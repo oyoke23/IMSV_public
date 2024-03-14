@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvOption1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="?attr/colorPrimaryVariant"
+            app:cardCornerRadius="15dp"
+            app:strokeColor="?attr/colorOnPrimary"
+            app:strokeWidth="3dp">
+
+            <TextView
+                android:id="@+id/tvOption1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/louis_george_cafe_bold"
+                android:gravity="center"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="30sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvOption2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="?attr/colorSecondary"
+            app:cardCornerRadius="15dp"
+            app:strokeColor="?attr/colorOnSecondary"
+            app:strokeWidth="3dp">
+
+            <TextView
+                android:id="@+id/tvOption2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/louis_george_cafe_bold"
+                android:gravity="center"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="30sp" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

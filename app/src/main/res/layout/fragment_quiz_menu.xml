@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvSelectDifficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/mitogen_display"
+        android:gravity="center"
+        android:text="@string/fragment_quiz_menu_select_difficulty"
+        android:textColor="?attr/colorOnSecondary"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvExplanation"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="50dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSelectDifficulty">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cvTvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/louis_george_cafe_bold"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:padding="20dp"
+                tools:text="Fácil"
+                android:textColor="?attr/colorOnSecondary"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cvIvDifficulty"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:civ_border_width="4dp"
+                app:civ_border_color="?attr/colorOnSecondary"
+                tools:src="@drawable/quiz_easy_difficulty"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvTvTitle" />
+
+            <TextView
+                android:id="@+id/cvTvExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/louis_george_cafe_bold"
+                android:gravity="center_vertical"
+                android:justificationMode="inter_word"
+                android:padding="20dp"
+                tools:text="Explicación de la dificultad Fácil"
+                android:textColor="?attr/colorOnSecondary"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvIvDifficulty" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnLeftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        app:cardBackgroundColor="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnDifficulty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnDifficulty"
+        app:strokeColor="?attr/colorOnSecondary"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_left_arrow"
+            app:tint="?attr/colorOnSecondary"
+            android:contentDescription="@string/left_arrow" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnRightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="32dp"
+        app:cardBackgroundColor="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnDifficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnDifficulty"
+        app:strokeColor="?attr/colorOnSecondary"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_right_arrow"
+            app:tint="?attr/colorOnSecondary"
+            android:contentDescription="@string/right_arrow" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnDifficulty"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="100dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@id/btnRightArrow"
+        app:layout_constraintStart_toEndOf="@id/btnLeftArrow"
+        app:layout_constraintTop_toBottomOf="@id/cvExplanation"
+        app:strokeColor="?attr/colorOnSecondary"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:id="@+id/tvDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/louis_george_cafe_bold"
+            android:gravity="center"
+            tools:text="Fácil"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

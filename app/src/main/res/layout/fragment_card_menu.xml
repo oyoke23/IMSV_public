@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvBoardSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/mitogen_display"
+                android:gravity="center"
+                android:text="@string/fragment_card_menu_select_board_type"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/rgBoardSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBoardSize">
+
+                <RadioButton
+                    android:id="@+id/cardMenuRb3x4"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_card_menu_3x4" />
+
+                <RadioButton
+                    android:id="@+id/cardMenuRb4x5"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_card_menu_4x5" />
+
+                <RadioButton
+                    android:id="@+id/cardMenuRb5x6"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_card_menu_5x6" />
+
+                <RadioButton
+                    android:id="@+id/cardMenuRb6x7"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_card_menu_6x7" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/mitogen_display"
+                android:gravity="center"
+                android:text="@string/fragment_card_menu_adjust_speed"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rgBoardSize" />
+
+            <RadioGroup
+                android:id="@+id/rgSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSpeed">
+
+                <RadioButton
+                    android:id="@+id/cardMenuRbSlow"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_card_menu_slow" />
+
+                <RadioButton
+                    android:id="@+id/cardMenuRbFast"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_card_menu_fast" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvUndiscoveredMode"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/mitogen_display"
+                android:gravity="center"
+                android:text="@string/fragment_card_menu_flipped_card_indicator"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cbUndiscoveredMode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rgSpeed" />
+
+            <CheckBox
+                android:id="@+id/cbUndiscoveredMode"
+                style="@style/CustomRadioButton"
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:layout_margin="4dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/tvUndiscoveredMode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvUndiscoveredMode"
+                app:layout_constraintTop_toTopOf="@id/tvUndiscoveredMode" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnStart"
+        style="@style/CustomMaterialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/louis_george_cafe_bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/fragment_card_menu_start"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

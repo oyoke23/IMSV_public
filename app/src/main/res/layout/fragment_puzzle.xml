@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="14dp"
+                android:id="@+id/tvPuzzleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:fontFamily="@font/mitogen_display"
+                android:gravity="center"
+                tools:text="Esto es un texto de prueba"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/tvPuzzleQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/louis_george_cafe_bold"
+                tools:text="Esto es un texto para el enunciado de prueba que necesito ver como queda y no se que escribir y por ello estoy escribiendo por escribir"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/ivPuzzleImage"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                tools:src="@drawable/puzzle_00"
+                android:layout_margin="16dp"
+                android:contentDescription="@string/fragment_puzzle_image_puzzle" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvAnswer"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toStartOf="@id/btnAnswer"
+        app:layout_constraintStart_toStartOf="@id/cvQuestion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:strokeColor="?attr/colorOnPrimary"
+        android:layout_marginBottom="30dp"
+        app:strokeWidth="3dp">
+
+        <EditText
+            android:id="@+id/etAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/transparent"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:hint="@string/fragment_puzzle_hint_response_text"
+            android:inputType="text"
+            android:padding="8dp"
+            android:fontFamily="@font/louis_george_cafe_bold"
+            android:textColor="?attr/colorOnPrimary"
+            android:textColorHint="@color/grey"
+            tools:ignore="Autofill" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnAnswer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toEndOf="@id/cvAnswer"
+        app:layout_constraintTop_toTopOf="@id/cvAnswer"
+        app:layout_constraintEnd_toEndOf="@id/cvQuestion"
+        app:layout_constraintBottom_toBottomOf="@id/cvAnswer"
+        app:strokeColor="?attr/colorOnPrimary"
+        app:strokeWidth="3dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_check"
+            android:padding="10dp"
+            app:tint="?attr/colorOnSecondary"
+            android:contentDescription="@string/fragment_puzzle_image_check" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

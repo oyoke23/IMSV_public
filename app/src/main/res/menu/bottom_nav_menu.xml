@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/bottom_navigation_home_selector"
+        android:title="@string/bottom_nav_menu_home" />
+    <item
+        android:id="@+id/action_games"
+        android:icon="@drawable/bottom_navigation_games_selector"
+        android:title="@string/bottom_nav_menu_games" />
+    <item
+        android:id="@+id/action_quote"
+        android:icon="@drawable/bottom_navigation_quote_selector"
+        android:title="@string/bottom_nav_menu_quote" />
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.oyoke.iara.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/gameMenuFragment"
+        android:name="com.oyoke.iara.games.GameMenuFragment"
+        android:label="fragment_game_menu"
+        tools:layout="@layout/fragment_game_menu" />
+    <fragment
+        android:id="@+id/quoteFragment"
+        android:name="com.oyoke.iara.quote.QuoteFragment"
+        android:label="QuoteFragment" />
+
+    <fragment
+        android:id="@+id/quizMenuFragment"
+        android:name="com.oyoke.iara.games.quiz.QuizMenuFragment"
+        android:label="fragment_quiz_menu"
+        tools:layout="@layout/fragment_quiz_menu" />
+    <fragment
+        android:id="@+id/cardMenuFragment"
+        android:name="com.oyoke.iara.games.memory_card.CardMenuFragment"
+        android:label="fragment_card_menu"
+        tools:layout="@layout/fragment_card_menu" />
+    <fragment
+        android:id="@+id/puzzleMenuFragment"
+        android:name="com.oyoke.iara.games.puzzles.PuzzleMenuFragment"
+        android:label="fragment_puzzle_menu"
+        tools:layout="@layout/fragment_puzzle_menu" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.oyoke.iara.games.quiz.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="com.oyoke.iara.games.memory_card.CardFragment"
+        android:label="fragment_card"
+        tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/puzzleFragment"
+        android:name="com.oyoke.iara.games.puzzles.PuzzleFragment"
+        android:label="fragment_puzzle"
+        tools:layout="@layout/fragment_puzzle" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.oyoke.iara.info.InfoFragment"
+        android:label="InfoFragment"
+        tools:layout="@layout/fragment_info"/>
+    <fragment
+        android:id="@+id/wouldHeRatherFragment"
+        android:name="com.oyoke.iara.games.would_he_rather.WouldHeRatherFragment"
+        android:label="fragment_would_he_rather"
+        tools:layout="@layout/fragment_would_he_rather" />
+    <fragment
+        android:id="@+id/wouldHeRatherMenuFragment"
+        android:name="com.oyoke.iara.games.would_he_rather.WouldHeRatherMenuFragment"
+        android:label="WouldHeRatherMenuFragment"
+        tools:layout="@layout/fragment_would_he_rather_menu"/>
+    <fragment
+        android:id="@+id/finalScreenFragment"
+        android:name="com.oyoke.iara.FinalScreenFragment"
+        android:label="fragment_final_screen"
+        tools:layout="@layout/fragment_final_screen" >
+        <action
+            android:id="@+id/action_finalScreenFragment_to_gameMenuFragment"
+            app:destination="@id/gameMenuFragment"
+            app:popUpTo="@+id/homeFragment"/>
+        <action
+            android:id="@+id/action_finalScreenFragment_to_quizMenuFragment"
+            app:destination="@id/quizMenuFragment"
+            app:popUpTo="@+id/gameMenuFragment"/>
+        <action
+            android:id="@+id/action_finalScreenFragment_to_cardMenuFragment"
+            app:destination="@id/cardMenuFragment"
+            app:popUpTo="@+id/gameMenuFragment"/>
+        <action
+            android:id="@+id/action_finalScreenFragment_to_puzzleMenuFragment"
+            app:destination="@id/puzzleMenuFragment"
+            app:popUpTo="@+id/gameMenuFragment"/>
+        <action
+            android:id="@+id/action_finalScreenFragment_to_wouldHeRatherMenuFragment"
+            app:destination="@id/wouldHeRatherMenuFragment"
+            app:popUpTo="@+id/gameMenuFragment"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Iara</string>
+    <string name="page_number_format">%1\$d/%2\$d</string>
+    <string name="left_arrow">Left arrow</string>
+    <string name="right_arrow">Right arrow</string>
+
+    <!--Activity Main-->
+    <string name="activity_main_image_info_icon">Icono que al pulsarlo te lleva al apartado \'Info\'</string>
+
+    <!--Bottom nav-->
+    <string name="bottom_nav_menu_home">Home</string>
+    <string name="bottom_nav_menu_games">Games</string>
+    <string name="bottom_nav_menu_quote">Quote</string>
+
+    <!--Home-->
+    <string name="fragment_home_card_envelope_image">Sobre de la carta antes de ser abierta</string>
+
+    <!--Games-->
+    <string name="fragment_games_game_banner">Banner de cada juego</string>
+
+    <!--Quiz Menu-->
+    <string name="fragment_quiz_menu_select_difficulty">Selecciona la dificultad</string>
+    <string name="fragment_quiz_menu_difficulty_easy">Fácil</string>
+    <string name="fragment_quiz_menu_difficulty_normal">Normal</string>
+    <string name="fragment_quiz_menu_difficulty_hard">Dificil</string>
+    <string name="fragment_quiz_menu_difficulty_expert">Experto</string>
+    <string name="fragment_quiz_menu_title_easy">Fácil</string>
+    <string name="fragment_quiz_menu_title_normal">Normal</string>
+    <string name="fragment_quiz_menu_title_hard">Dificil</string>
+    <string name="fragment_quiz_menu_title_expert">Experto</string>
+    <string name="fragment_quiz_menu_explanation_easy">¡Comencemos con algo suave! Aquí tienes 10 preguntas fáciles aleatorias. Dispones de 20 segundos para responder cada una. Si fallas, se te restarán 5 segundos. Si el tiempo se agota, pierdes.</string>
+    <string name="fragment_quiz_menu_explanation_normal">¡Aquí empezamos a calentar motores! Responde 10 preguntas fáciles y otras 5 un poco más intensas. Tienes 20 segundos para responder cada una, en el caso de fallar, se te restarán 7 segundos. Si el tiempo se agota, pierdes.</string>
+    <string name="fragment_quiz_menu_explanation_hard">¡Prepárate! Este nivel es más desafiante. Responderás 10 preguntas fáciles, 7 normales y 3 difíciles. Tienes 15 segundos para cada una; al fallar, se restarán 5. ¡Prepárate para pensar en algo como \"¿POR QUE SE SUPONE QUE TENDRÍA QUE SABER ESO?\"</string>
+    <string name="fragment_quiz_menu_explanation_expert">¡Aquí tienes un reto de verdad! ¿Podrás conseguir responder correctamente TODAS las preguntas sin fallar ninguna de ellas? Dispones de  ¡Es tu momento de brillar, princesa!</string>
+
+    <!--Quiz-->
+    <string name="fragment_quiz_response_image_a">Icono respuesta A</string>
+    <string name="fragment_quiz_response_image_b">Icono respuesta B</string>
+    <string name="fragment_quiz_response_image_c">Icono respuesta C</string>
+    <string name="fragment_quiz_response_image_d">Icono respuesta D</string>
+
+    <!--Card Menu-->
+    <string name="fragment_card_menu_select_board_type">Selecciona el tipo de tablero</string>
+    <string name="fragment_card_menu_3x4">3x4</string>
+    <string name="fragment_card_menu_4x5">4x5</string>
+    <string name="fragment_card_menu_5x6">5x6</string>
+    <string name="fragment_card_menu_6x7">6x7</string>
+    <string name="fragment_card_menu_adjust_speed">Ajusta la velocidad</string>
+    <string name="fragment_card_menu_slow">Lento</string>
+    <string name="fragment_card_menu_fast">Rápido</string>
+    <string name="fragment_card_menu_flipped_card_indicator">Indicador de carta volteada</string>
+    <string name="fragment_card_menu_start">Start</string>
+
+    <!--Card-->
+    <string name="fragment_card_card_image">Parte frontal y trasera de la carta</string>
+    <string name="fragment_card_undiscovered_image_question_mark">Interrogante indicativo de si la carta se ha volteado en algún momento</string>
+
+    <!--Puzzle Menu-->
+    <string name="fragment_puzzle_menu_select_puzzle">Selecciona el Puzzle</string>
+
+    <!--Puzzle-->
+    <string name="fragment_puzzle_image_puzzle">Imagen descriptiva del puzzle actual</string>
+    <string name="fragment_puzzle_hint_response_text">Respuesta…</string>
+    <string name="fragment_puzzle_image_check">Boton check para confirmar la respuesta</string>
+    <string name="fragment_puzzle_padlock_image">Candado del puzzle que indica si está disponible</string>
+
+    <!--Would He Rather Menu-->
+    <string name="fragment_would_he_rather_menu_difficulty_description_text_casual">Casual: Si fallas no hay penalización.</string>
+    <string name="fragment_would_he_rather_menu_difficulty_description_text_challenge">Reto: Si fallas pierdes la partida.</string>
+
+    <!--Would He Rather-->
+    <string name="fragment_would_he_rather_select_category">Selecciona la categoría</string>
+    <string name="fragment_would_he_rather_casual">Casual</string>
+    <string name="fragment_would_he_rather_funny">Cómico</string>
+    <string name="fragment_would_he_rather_gore">Gore</string>
+    <string name="fragment_would_he_rather_couple">Parejas</string>
+    <string name="fragment_would_he_rather_sexual">Sexual</string>
+    <string name="fragment_would_he_rather_mixed">Mixto</string>
+    <string name="fragment_would_he_rather_response_time">Tiempo de respuesta</string>
+    <string name="fragment_would_he_rather_fast">Rápido          (10s)</string>
+    <string name="fragment_would_he_rather_medium">Medio          (15s)</string>
+    <string name="fragment_would_he_rather_slow">Lento          (20s)</string>
+    <string name="fragment_would_he_rather_select_difficulty">Elige la Dificultad</string>
+    <string name="fragment_would_he_rather_start">Start</string>
+
+    <!--Info-->
+    <string name="fragment_info_character_image">Imagen del personaje que te habla en \'Info\'</string>
+    <string name="fragment_info_textbox_image">Textbox donde va el texto del personaje</string>
+
+    <!--Final screen-->
+    <string name="fragment_final_screen_lose_secondary_text">Te deseo suerte para la próxima vez.</string>
+    <string name="fragment_final_screen_lose_main_text">Has Perdido</string>
+    <string name="fragment_final_screen_win_quiz_main_text">¡Enhorabuena!</string>
+    <string name="fragment_final_screen_win_quiz_secondary_text">Conseguiste responder todas las preguntas.</string>
+    <string name="fragment_final_screen_win_memory_card_main_text">¡Parejas completadas!</string>
+    <string name="fragment_final_screen_win_memory_card_secondary_text">Has tardado %1$s min.</string>
+    <string name="fragment_final_screen_win_puzle_main_text">¡Correcto!</string>
+    <string name="fragment_final_screen_win_puzzle_secondary_text">Has tardado %1$s min.</string>
+    <string name="fragment_final_screen_win_whr_main_text">¡Felicitaciones!</string>
+    <string name="fragment_final_screen_win_whr_secondary_text">Has completado el \'¿Qué prefiere?\'.</string>
+    <string name="fragment_final_screen_press_to_return">Haz click para volver al menú</string>
+</resources>

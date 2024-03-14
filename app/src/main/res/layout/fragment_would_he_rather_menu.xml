@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvWHRMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/mitogen_display"
+                android:gravity="center"
+                android:text="@string/fragment_would_he_rather_select_category"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                android:columnCount="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSubTitle">
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbCasual"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_would_he_rather_casual" />
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbFunny"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_would_he_rather_funny" />
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbGore"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_would_he_rather_gore" />
+
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbCouple"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_would_he_rather_couple" />
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbSexual"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_would_he_rather_sexual" />
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbMixed"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_would_he_rather_mixed" />
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/tvAnswerTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/mitogen_display"
+                android:gravity="center"
+                android:text="@string/fragment_would_he_rather_response_time"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gridLayout" />
+
+            <RadioGroup
+                android:id="@+id/rgAnswerTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAnswerTime">
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbSlow"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_would_he_rather_fast" />
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbMedium"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_would_he_rather_medium" />
+
+                <RadioButton
+                    android:id="@+id/wouldHeRatherMenuRbFast"
+                    style="@style/CustomRadioButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/fragment_would_he_rather_slow" />
+            </RadioGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/mitogen_display"
+        android:gravity="center"
+        android:text="@string/fragment_would_he_rather_select_difficulty"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvWHRMenu" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnLeftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        app:cardBackgroundColor="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnDifficulty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnDifficulty"
+        app:strokeColor="?attr/colorOnSecondary"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_left_arrow"
+            app:tint="?attr/colorOnSecondary"
+            android:contentDescription="@string/left_arrow" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnRightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="32dp"
+        app:cardBackgroundColor="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnDifficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnDifficulty"
+        app:strokeColor="?attr/colorOnSecondary"
+        app:strokeWidth="2dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_right_arrow"
+            app:tint="?attr/colorOnSecondary"
+            android:contentDescription="@string/right_arrow" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnDifficulty"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="24dp"
+        android:backgroundTint="?attr/colorPrimaryVariant"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@id/btnRightArrow"
+        app:layout_constraintStart_toEndOf="@id/btnLeftArrow"
+        app:layout_constraintTop_toBottomOf="@id/tvDifficulty"
+        app:strokeColor="?attr/colorOnSecondary">
+
+        <TextView
+            android:id="@+id/tvDifficultyDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/louis_george_cafe_bold"
+            android:gravity="center"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="18sp"
+            tools:text="Reto: Si fallas pierdes la partida" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btnStart"
+        style="@style/CustomMaterialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/louis_george_cafe_bold"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/fragment_would_he_rather_start"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="18sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

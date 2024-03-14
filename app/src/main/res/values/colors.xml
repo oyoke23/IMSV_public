@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#808080</color>
+    <!--iaraFavColor = #9564B5-->
+
+    <color name="correctAnswer">#69F0AE</color>
+    <color name="wrongAnswer">#FF5252</color>
+
+    <color name="purple_050">#faf8fc</color>
+    <color name="purple_400">#c4a6da</color>
+    <color name="purple_500">#ad83c9</color>
+    <color name="purple_700">#81539d</color>
+    <color name="purple_900">#583a69</color>
+    <color name="purple_950">#3b214a</color>
+    <color name="purple_1000">#1f1d30</color>
+
+    <color name="violet_100">#ede9fe</color>
+    <color name="violet_200">#ddd6fe</color>
+
+
+    <!--#00E676, #FF1744-->
+    <color name="purple_translucent">#809564B5</color>
+    <color name="transparent">#00FFFFFF</color>
+
+</resources>
