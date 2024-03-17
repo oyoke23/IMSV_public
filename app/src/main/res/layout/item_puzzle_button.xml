@@ -55,7 +55,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="?attr/colorPrimary"
-            android:contentDescription="@string/fragment_puzzle_padlock_image" />
+            android:contentDescription="@string/fragment_puzzle_menu_padlock_image" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
 

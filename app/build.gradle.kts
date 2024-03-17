@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.oyoke.iara"
+    namespace = "com.oyoke.imsv"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.oyoke.iara"
+        applicationId = "com.oyoke.imsv"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

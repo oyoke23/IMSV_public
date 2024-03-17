@@ -15,6 +15,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Iara"
+rootProject.name = "Imsv"
 include(":app")
  

@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.Iara" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Imsv" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
 
         <item name="colorPrimary">@color/white</item>
 
@@ -45,7 +45,7 @@
         <item name="android:color">@color/purple_translucent</item>
     </style>
 
-    <style name="Theme.Iara.NoActionBar">
+    <style name="Theme.Imsv.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

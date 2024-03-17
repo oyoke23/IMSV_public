@@ -27,7 +27,7 @@
                 android:layout_marginTop="24dp"
                 android:fontFamily="@font/mitogen_display"
                 android:gravity="center"
-                android:text="@string/fragment_would_he_rather_select_category"
+                android:text="@string/fragment_would_he_rather_menu_select_category"
                 android:textColor="?attr/colorOnPrimary"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -46,47 +46,47 @@
                 app:layout_constraintTop_toBottomOf="@id/tvSubTitle">
 
                 <RadioButton
-                    android:id="@+id/wouldHeRatherMenuRbCasual"
+                    android:id="@+id/wouldHeRatherMenuRbCategory1"
                     style="@style/CustomRadioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_would_he_rather_casual" />
+                    android:text="@string/fragment_would_he_rather_menu_category1" />
 
                 <RadioButton
-                    android:id="@+id/wouldHeRatherMenuRbFunny"
+                    android:id="@+id/wouldHeRatherMenuRbCategory2"
                     style="@style/CustomRadioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_would_he_rather_funny" />
+                    android:text="@string/fragment_would_he_rather_menu_category2" />
 
                 <RadioButton
-                    android:id="@+id/wouldHeRatherMenuRbGore"
+                    android:id="@+id/wouldHeRatherMenuRbCategory3"
                     style="@style/CustomRadioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_would_he_rather_gore" />
+                    android:text="@string/fragment_would_he_rather_menu_category3" />
 
 
                 <RadioButton
-                    android:id="@+id/wouldHeRatherMenuRbCouple"
+                    android:id="@+id/wouldHeRatherMenuRbCategory4"
                     style="@style/CustomRadioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_would_he_rather_couple" />
+                    android:text="@string/fragment_would_he_rather_menu_category4" />
 
                 <RadioButton
-                    android:id="@+id/wouldHeRatherMenuRbSexual"
+                    android:id="@+id/wouldHeRatherMenuRbCategory5"
                     style="@style/CustomRadioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_would_he_rather_sexual" />
+                    android:text="@string/fragment_would_he_rather_menu_category5" />
 
                 <RadioButton
-                    android:id="@+id/wouldHeRatherMenuRbMixed"
+                    android:id="@+id/wouldHeRatherMenuRbCategoryMixed"
                     style="@style/CustomRadioButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/fragment_would_he_rather_mixed" />
+                    android:text="@string/fragment_would_he_rather_menu_mixed" />
             </GridLayout>
 
             <TextView
@@ -96,7 +96,7 @@
                 android:layout_marginTop="40dp"
                 android:fontFamily="@font/mitogen_display"
                 android:gravity="center"
-                android:text="@string/fragment_would_he_rather_response_time"
+                android:text="@string/fragment_would_he_rather_menu_response_time"
                 android:textColor="?attr/colorOnPrimary"
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -107,7 +107,7 @@
                 android:id="@+id/rgAnswerTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="16dp"
+                android:layout_marginHorizontal="18dp"
                 android:layout_marginVertical="12dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -118,26 +118,26 @@
                 <RadioButton
                     android:id="@+id/wouldHeRatherMenuRbSlow"
                     style="@style/CustomRadioButton"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:text="@string/fragment_would_he_rather_fast" />
+                    android:layout_margin="8dp"
+                    android:text="@string/fragment_would_he_rather_menu_fast" />
 
                 <RadioButton
                     android:id="@+id/wouldHeRatherMenuRbMedium"
                     style="@style/CustomRadioButton"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:text="@string/fragment_would_he_rather_medium" />
+                    android:layout_margin="8dp"
+                    android:text="@string/fragment_would_he_rather_menu_medium" />
 
                 <RadioButton
                     android:id="@+id/wouldHeRatherMenuRbFast"
                     style="@style/CustomRadioButton"
-                    android:layout_width="150dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:text="@string/fragment_would_he_rather_slow" />
+                    android:layout_margin="8dp"
+                    android:text="@string/fragment_would_he_rather_menu_slow" />
             </RadioGroup>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -149,7 +149,7 @@
         android:layout_marginTop="40dp"
         android:fontFamily="@font/mitogen_display"
         android:gravity="center"
-        android:text="@string/fragment_would_he_rather_select_difficulty"
+        android:text="@string/fragment_would_he_rather_menu_select_difficulty"
         android:textColor="?attr/colorOnPrimary"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -247,7 +247,7 @@
             android:fontFamily="@font/louis_george_cafe_bold"
             android:gravity="center"
             android:padding="10dp"
-            android:text="@string/fragment_would_he_rather_start"
+            android:text="@string/fragment_would_he_rather_menu_start"
             android:textColor="?attr/colorOnPrimary"
             android:textSize="18sp" />
     </com.google.android.material.card.MaterialCardView>

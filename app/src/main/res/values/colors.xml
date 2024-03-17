@@ -3,7 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#808080</color>
-    <!--iaraFavColor = #9564B5-->
 
     <color name="correctAnswer">#69F0AE</color>
     <color name="wrongAnswer">#FF5252</color>
