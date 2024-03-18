@@ -1,1 +1,1 @@
-Template of the application that I have created as a gift for my partner
+Public version of the application that I created as a gift for my partner, without personal information
