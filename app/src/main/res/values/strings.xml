@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Imsv</string>
+    <string name="app_name">IMSV</string>
     <string name="page_number_format">%1\$d/%2\$d</string>
     <string name="left_arrow">Left arrow</string>
     <string name="right_arrow">Right arrow</string>
