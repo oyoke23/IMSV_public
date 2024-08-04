@@ -69,16 +69,16 @@
 
     <!--Would He Rather Menu-->
     <string name="fragment_would_he_rather_menu_select_category">Select the category</string>
-    <string name="fragment_would_he_rather_menu_category1">Category1</string>
-    <string name="fragment_would_he_rather_menu_category2">Category2</string>
-    <string name="fragment_would_he_rather_menu_category3">Category3</string>
-    <string name="fragment_would_he_rather_menu_category4">Category4</string>
-    <string name="fragment_would_he_rather_menu_category5">Category5</string>
+    <string name="fragment_would_he_rather_menu_category1">Category 1</string>
+    <string name="fragment_would_he_rather_menu_category2">Category 2</string>
+    <string name="fragment_would_he_rather_menu_category3">Category 3</string>
+    <string name="fragment_would_he_rather_menu_category4">Category 4</string>
+    <string name="fragment_would_he_rather_menu_category5">Category 5</string>
     <string name="fragment_would_he_rather_menu_mixed">Mixed</string>
     <string name="fragment_would_he_rather_menu_response_time">Select the response time</string>
-    <string name="fragment_would_he_rather_menu_fast">Fast (10s)</string>
-    <string name="fragment_would_he_rather_menu_medium">Medium (15s)</string>
-    <string name="fragment_would_he_rather_menu_slow">Slow (20s)</string>
+    <string name="fragment_would_he_rather_menu_fast">Fast\n(10s)</string>
+    <string name="fragment_would_he_rather_menu_medium">Medium\n(15s)</string>
+    <string name="fragment_would_he_rather_menu_slow">Slow\n(20s)</string>
     <string name="fragment_would_he_rather_menu_select_difficulty">Select the difficulty</string>
     <string name="fragment_would_he_rather_menu_difficulty_description_text_casual">Casual: If you fail there is no penalty.</string>
     <string name="fragment_would_he_rather_menu_difficulty_description_text_challenge">Challenge: If you fail you lose the game.</string>
