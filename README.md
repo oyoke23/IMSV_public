@@ -37,5 +37,5 @@ Creating IMSV has been a rewarding experience, allowing for the application of n
 
 ---
 
-*Developed by [Kevin Llaberia Sanchez]([URL](https://github.com/oyoke23))*
+*Developed by [Kevin Llaberia Sanchez](https://github.com/oyoke23)*
 
